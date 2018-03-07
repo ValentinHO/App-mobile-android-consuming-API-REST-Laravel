@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:background="@mipmap/backgrounds">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:src="@mipmap/man"
+        app:civ_border_color="@color/colorAccent"
+        android:layout_marginLeft="24dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"/>
+    <TextView
+        android:id="@+id/tvUserSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Nombre de Usuario"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:paddingBottom="4dp"
+        android:layout_below="@+id/profile_image"
+        android:layout_alignLeft="@+id/profile_image"
+        android:layout_alignStart="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/tvEmailSession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="emailuser@gmail.com"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:paddingBottom="4dp"
+        android:layout_below="@+id/tvUserSession"
+        android:layout_alignLeft="@+id/profile_image"
+        android:layout_alignStart="@+id/profile_image" />
+
+</RelativeLayout>
